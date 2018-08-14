@@ -6,6 +6,7 @@ typedef int TipoStack;
 class Stack : private stack<TipoStack> {
 public:
     void Push(TipoStack _valor) {
+
         stack::push(_valor);
     }
 
