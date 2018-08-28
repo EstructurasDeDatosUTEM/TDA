@@ -11,6 +11,8 @@ class ClaseCola : private std::queue<Tipo>{
         void Agregar(Tipo _valor);
         Tipo Extraer();
         bool Vacio();
+        /*Funciones Miembro*/
+        void Reset();
     protected:
 
     private:
@@ -40,6 +42,11 @@ bool ClaseCola<Tipo>::Vacio(){
     return std::queue<Tipo>::empty();
 }
 
+template <class Tipo>
+void ClaseCola<Tipo>::Reset() {
+    while(!Vacio())
+        Extraer();
+};
 
 
 #endif // CLASECOLA_H

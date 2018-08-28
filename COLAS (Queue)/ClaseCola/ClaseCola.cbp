@@ -31,7 +31,9 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add directory="include" />
 		</Compiler>
+		<Unit filename="include/ClaseCola.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
